@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <script>
+         /* EXERCISE 1
+            Write a function to change the Title of the page in something else
+            */
+				//document.title = "New Title"
+  
+            var myTitle = document.querySelector("h1");
+
+            myTitle.addEventListener("click", function (event){
+                event.target.innerText = "You Changed Me!";
+            });
+           
+
+             /* EXERCISE 2
+            Write a function to change the class of the title of the page in "myHeading"
+            */
+
+            function changeTitleClass(){
+
+            var title = document.querySelector('h1');
+            title.innerHTML = <h1 class="myHeading">This is the title of the page</h1>;
+            
+            }
+
+
+            /* EXERCISE 3
+            Write a function to change the text of only the p which are child of a div
+            */
+
+            function changeDivP(newDivP) {
+
+                var newDivP = document.querySelector("div p").innerText = "Nothing is permanent in life";
+
+            }
+            
+
+            /* EXERCISE 4
+            Write a function to change the destination of every link to https://www.google.com
+            */
+
+            function changeLink(newLink) {
+
+                var newLink = document.querySelector("a");
+                newLink.innerHTML = "href=\"https:www.google.com\"";
+
+            }
+
+             /* EXERCISE 5
+            Write a function to add a new item ONLY to the second list
+            */
+
+            function addElement(myElem) {
+
+                var newElem = document.querySelectorAll("#secondList l1")[1];
+                newElem.innerText = "My Item";
+                
+            }
+
+              /* EXERCISE 6
+           Write a function to add a second paragraph to the div
+            */
+
+            function newP(p)
+
+            var para = document.querySelector(div);
+            para.innerHTML += "<p>I am new here class</p>";
+
+
+
+            /* EXERCISE 7
+           Write a function to make the first UL disappear
+            */
+
+            var ul = document.querySelector("ul");
+                ul.addEventListener('click', function (event){
+                    event.currentTarget.style.display = "none";
+                })
+            
+
+            /* EXERCISE 8
+            Write a function to make the background of every UL green
+            */
+            
+            var ul = document.querySelector("ul");
+                ul.addEventListener('click', function (event){
+                    event.target.style.backgroundColor = "green"
+                })
+            
+            
+
+            /* EXERCISE 9
+            Make the heading of the page changing color every time the user clicks on it
+            */
+
+            var heading = document.querySelector("h1");
+                heading.addEventListener('click', function (event){
+                    event.target.style.color = "random"
+                })
+                
+
+            /* EXERCISE 10
+          Create a new welcome alert message when the page successfully loads
+            */
+
+            /* EXERCISE 11
+            Use HTML5 tags to divide sections, headers etc 
+            */
+        
+        </script>
+
+        <style>
+            .myHeading {
+                color: red;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is the title of the page</h1>
+        <h2>This is the subtitle of the page</h2>
+
+        <hr>
+
+        <ul id="firstList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+
+        <ul id="secondList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+
+        <a href="strive.school">This link goes to Strive School</a>
+
+        <div>
+            <p>This text is just for the exercise</p>
+        </div>
+
+        <p>And this text is just for the exercise too!</p>
+    </body>
+</html>
